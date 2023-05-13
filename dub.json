@@ -1,59 +1,67 @@
 {
+	"name": "app-grundschutz",
+	"description": "App for enterprise content management",
 	"authors": [
-		"UI Manufaktur UG",
-		"Ozan Nurettin Süel",
-		"Sicherheitsschmiede"
+		"Sicherheitsschmiede",
+		"Ozan Nurettin Süel"
 	],
-	"copyright": "Copyright © 2017-2021, UI Manufaktur UG / 2022 Ozan Nurettin Süel (Sicherheitsschmiede)",
+	"copyright": "Copyright © 2015-2023, Ozan Nurettin Süel",	
+	"license": "Apache-2.0",
+	"targetType": "library",	
+	"configurations": [
+		{
+			"name": "offline"
+		},
+		{
+			"name": "test",
+			"versions": [
+				"test_app_grundschutz"
+			]
+		}
+	],
 	"dependencies": {
-		"arsd-official": "~>10.5.1",
 		"colored": "~>0.0.23",
-		"dini": "~>2.0.0",
-		"dyaml": "~>0.8.5",
-		"vibe-d": "~>0.9.4"
+		"vibe-d": "~>0.9.6"
 	},
-	"description": "Server for modelling",
 	"importPaths": [
 		"../../LIBS/uim-core",
 		"../../LIBS/uim-oop",
 		"../../LIBS/uim-css",
-		"../../LIBS/uim-javascript",
-		"../../LIBS/uim-json",
+		"../../LIBS/uim-mvc",
 		"../../LIBS/uim-html",
 		"../../LIBS/uim-bootstrap",
+		"../../LIBS/uim-controls",
 		"../../LIBS/uim-apps",
 		"../../LIBS/uim-servers",
-		"../../LIBS/uim-modeller",
-		"../../LIBS/uim-systems",
 		"../../LIBS/uim-jsonbase",
-		"../../LIBS/uim-entities",
+		"../../LIBS/uim-models",
 		"../../LIBS/uim-entitybase",
-		"../../MODELS/model-systems",
-		"../../MODELS/model-modeller",
+
+		"../../MODELS/model-cms",
+
+		"../../LANGS/lang-javascript",
+
 		"../../LAYOUTS/layout-tabler/source/layouts",
 		"./"
 	],
-	"license": "UIM",
-	"name": "server-modeller",
 	"sourcePaths": [
 		"../../LIBS/uim-core",
 		"../../LIBS/uim-oop",
 		"../../LIBS/uim-css",
-		"../../LIBS/uim-javascript",
-		"../../LIBS/uim-json",
+		"../../LIBS/uim-mvc",
 		"../../LIBS/uim-html",
 		"../../LIBS/uim-bootstrap",
+		"../../LIBS/uim-controls",
 		"../../LIBS/uim-apps",
 		"../../LIBS/uim-servers",
-		"../../LIBS/uim-modeller",
-		"../../LIBS/uim-systems",
 		"../../LIBS/uim-jsonbase",
-		"../../LIBS/uim-entities",
+		"../../LIBS/uim-models",
 		"../../LIBS/uim-entitybase",
-		"../../MODELS/model-systems",
-		"../../MODELS/model-modeller",
+		
+		"../../MODELS/model-cms",
+
+		"../../LANGS/lang-javascript",
 		"../../LAYOUTS/layout-tabler/source/layouts",
 		"./"
-	],
-	"targetType": "executable"
+	]
 }
