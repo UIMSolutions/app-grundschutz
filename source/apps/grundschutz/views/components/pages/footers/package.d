@@ -1,5 +1,5 @@
-module apps.projects.views.components.pages.footers;
+module apps.grundschutz.views.components.pages.footers;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
 

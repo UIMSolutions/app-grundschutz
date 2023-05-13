@@ -1,6 +1,6 @@
-module apps.projects.views.error;
+module apps.grundschutz.views.error;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
 
 class DProjectsErrorView : DView {

@@ -1,8 +1,8 @@
-module apps.projects.views.components.pages;
+module apps.grundschutz.views.components.pages;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
 
-public import apps.projects.views.components.pages.bodies;
-public import apps.projects.views.components.pages.footers;
-public import apps.projects.views.components.pages.headers;
+public import apps.grundschutz.views.components.pages.bodies;
+public import apps.grundschutz.views.components.pages.footers;
+public import apps.grundschutz.views.components.pages.headers;

@@ -1,5 +1,5 @@
-module apps.projects.views.components.pages.headers;
+module apps.grundschutz.views.components.pages.headers;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
 

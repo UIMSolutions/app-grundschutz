@@ -1,5 +1,5 @@
-module apps.projects.views.components.pages.bodies;
+module apps.grundschutz.views.components.pages.bodies;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
 

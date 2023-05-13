@@ -1,7 +1,7 @@
-module apps.projects.views;
+module apps.grundschutz.views;
 
-public import apps.projects.views.components;
-public import apps.projects.views.entities;
+public import apps.grundschutz.views.components;
+public import apps.grundschutz.views.entities;
 
-public import apps.projects.views.error;
-public import apps.projects.views.index;
+public import apps.grundschutz.views.error;
+public import apps.grundschutz.views.index;

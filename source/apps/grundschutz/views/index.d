@@ -1,6 +1,6 @@
-module apps.projects.views.index;
+module apps.grundschutz.views.index;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
 
 class DProjectsIndexView : DView {

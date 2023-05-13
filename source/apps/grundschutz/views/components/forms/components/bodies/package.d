@@ -1,4 +1,4 @@
-module apps.projects.views.components.forms.components.bodies;
+module apps.grundschutz.views.components.forms.components.bodies;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:

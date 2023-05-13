@@ -1,4 +1,4 @@
-module apps.projects.views.components;
+module apps.grundschutz.views.components;
 
-public import apps.projects.views.components.forms;
-public import apps.projects.views.components.pages;
+public import apps.grundschutz.views.components.forms;
+public import apps.grundschutz.views.components.pages;

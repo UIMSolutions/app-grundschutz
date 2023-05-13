@@ -1,4 +1,4 @@
-module apps.projects.views.entities;
+module apps.grundschutz.views.entities;
 
-import apps.projects;
+import apps.grundschutz;
 @safe:
