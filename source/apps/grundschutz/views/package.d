@@ -1,4 +1,7 @@
-module apps.grundschutz.views;
+module apps.projects.views;
 
-@safe:
-import apps.grundschutz;
+public import apps.projects.views.components;
+public import apps.projects.views.entities;
+
+public import apps.projects.views.error;
+public import apps.projects.views.index;
