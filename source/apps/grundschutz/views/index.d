@@ -3,8 +3,8 @@ module apps.grundschutz.views.index;
 import apps.grundschutz;
 @safe:
 
-class DProjectsIndexView : DView {
-  mixin(ViewThis!("ProjectsIndexView"));
+class DGSIndexPageView : DView {
+  mixin(ViewThis!("GSIndexPageView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
@@ -14,4 +14,4 @@ class DProjectsIndexView : DView {
         .title("projects -> Index"); */
   }
 }
-mixin(ViewCalls!("ProjectsIndexView", "DProjectsIndexView"));
+mixin(ViewCalls!("GSIndexPageView"));
