@@ -24,10 +24,10 @@ public {
   import apps.grundschutz.views;
 }
 
-DApplication grundschutzApp;
+DApplication gsApp;
 static this() {
-  grundschutzApp = Application
-    .name("grundschutzApp")
+  gsApp = Application
+    .name("gsApp")
     .rootPath("/apps/grundschutz")
-    .addRoute(Route("/", HTTPMethod.GET, grundschutzIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController));
 }

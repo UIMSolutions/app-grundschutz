@@ -1,4 +1,6 @@
 module apps.grundschutz.controllers;
 
-@safe:
-import apps.grundschutz;
+public {
+  import apps.grundschutz.controllers.components;
+  import apps.grundschutz.controllers.pages;
+}
