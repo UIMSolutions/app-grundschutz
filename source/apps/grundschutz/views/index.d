@@ -6,12 +6,12 @@ import apps.grundschutz;
 class DGSIndexView : DView {
   mixin(ViewThis!("GSIndexView"));
 
-  override void beforeH5(STRINGAA options = null) {
-    super.beforeH5(options);
+  override DH5Obj[] toH5(STRINGAA options = null) {
+    debugMethodCall(moduleName!DGSIndexView~"DGSIndexView("~this.className~")::toH5");
 
-    /* this
-      .pageHeader
-        .title("projects -> Index"); */
+    return [
+      H5Div("APP GS -> Index")
+    ].toH5;
   }
 }
 mixin(ViewCalls!("GSIndexView"));
