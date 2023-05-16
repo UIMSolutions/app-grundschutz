@@ -1,9 +1,9 @@
-module apps.cms.controllers.pages.index;
+module apps.grundschutz.controllers.pages.index;
 
-import apps.cms;
+import apps.grundschutz;
 @safe:
 
-class DGSIndexPageController : DPageController {
+class DGSIndexPageController : DAPPPageController {
   mixin(ControllerThis!("GSIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

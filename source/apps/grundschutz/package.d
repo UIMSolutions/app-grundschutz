@@ -24,9 +24,9 @@ public {
   import apps.grundschutz.views;
 }
 
-DApplication gsApp;
+DApp gsApp;
 static this() {
-  gsApp = Application
+  gsApp = App
     .name("gsApp")
     .rootPath("/apps/grundschutz")
     .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController));

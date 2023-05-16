@@ -1,9 +1,9 @@
-module apps.cms.controllers.pages.error;
+module apps.grundschutz.controllers.pages.error;
 
-import apps.cms;
+import apps.grundschutz;
 @safe:
 
-class DGSErrorPageController : DPageController {
+class DGSErrorPageController : DAPPPageController {
   mixin(ControllerThis!("GSErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {

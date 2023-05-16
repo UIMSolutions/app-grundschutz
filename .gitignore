@@ -14,3 +14,4 @@ server-modeller-test-*
 *.obj
 *.lst
 dub.selections.json
+app-grundschutz-test-offline
