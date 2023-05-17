@@ -27,7 +27,8 @@ public {
 DApp gsApp;
 static this() {
   gsApp = App
-    .name("gsApp")
+    .name("grundschutzApp")
     .rootPath("/apps/grundschutz")
+    .addRoute(Route("", HTTPMethod.GET, GSIndexPageController));
     .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController));
 }
