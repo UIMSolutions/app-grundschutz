@@ -20,15 +20,16 @@ public import langs.javascript;
 public {
   import apps.grundschutz.controllers;
   import apps.grundschutz.helpers;
+  import apps.grundschutz.routers;
   import apps.grundschutz.tests;
   import apps.grundschutz.views;
 }
 
-DApp gsApp;
+DApp grundschutzApp;
 static this() {
-  gsApp = App
+  grundschutzApp = App
     .name("grundschutzApp")
     .rootPath("/apps/grundschutz")
-    .addRoute(Route("", HTTPMethod.GET, GSIndexPageController));
+    .addRoute(Route("", HTTPMethod.GET, GSIndexPageController))
     .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController));
 }
