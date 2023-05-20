@@ -3,14 +3,14 @@ module apps.grundschutz.controllers.pages.index;
 import apps.grundschutz;
 @safe:
 
-class DGSIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("GSIndexPageController"));
+class DIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("IndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(GSIndexView(this));
+      .view(IndexView(this));
   }
 }
-mixin(ControllerCalls!("GSIndexPageController"));
+mixin(ControllerCalls!("IndexPageController"));

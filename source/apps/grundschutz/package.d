@@ -31,6 +31,6 @@ static this() {
     App
     .name("grundschutzApp")
     .rootPath("/apps/grundschutz")
-    .addRoute(Route("", HTTPMethod.GET, GSIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController)));
+    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
 }
