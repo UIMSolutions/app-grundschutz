@@ -25,11 +25,12 @@ public {
   import apps.grundschutz.views;
 }
 
-DApp grundschutzApp;
+@safe:
 static this() {
-  grundschutzApp = App
+  AppRegistry.register("apps.grundschutz",  
+    App
     .name("grundschutzApp")
     .rootPath("/apps/grundschutz")
     .addRoute(Route("", HTTPMethod.GET, GSIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, GSIndexPageController)));
 }
