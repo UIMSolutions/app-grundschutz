@@ -1,4 +1,4 @@
-# App 🎁 app-myname
+# App 🎁 app-gundschutz 
 
 Web app for managing Grundschutz (base protection) projects
 
