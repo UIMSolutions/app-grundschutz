@@ -28,9 +28,11 @@ public {
 @safe:
 static this() {
   AppRegistry.register("apps.grundschutz",  
-    App
-    .name("grundschutzApp")
-    .rootPath("/apps/grundschutz")
-    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
+    App("grundschutzApp", "/apps/grundschutz")
+      .importTranslations()
+      .addRoutes(
+        Route("", HTTPMethod.GET, IndexPageController),
+        Route("/", HTTPMethod.GET, IndexPageController)
+      )
+    );
 }
