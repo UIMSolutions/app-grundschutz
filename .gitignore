@@ -1,7 +1,7 @@
 .dub
 docs.json
 __dummy.html
-docs/
+
 /server-modeller
 server-modeller.so
 server-modeller.dylib
