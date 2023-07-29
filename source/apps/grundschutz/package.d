@@ -2,8 +2,10 @@ module apps.grundschutz;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -27,12 +29,18 @@ public {
 
 @safe:
 static this() {
-  AppRegistry.register("apps.grundschutz",  
-    App("grundschutzApp", "apps/grundschutz")
-      .importTranslations()
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  auto myApp = App("grundschutzApp", "apps/grundschutz");
+
+  with (myApp) {
+    importTranslations;
+    addControllers([
+      "gs.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("gs.index")),
+      Route("/", HTTPMethod.GET, controller("gs.index"))
     );
+  }
+
+  AppRegistry.register("apps.grundschutz", myApp);
 }
